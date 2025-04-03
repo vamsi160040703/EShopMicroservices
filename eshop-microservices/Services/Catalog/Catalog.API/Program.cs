@@ -5,5 +5,5 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 //Configure teh HTTp request pipeline
-
+Console.WriteLine("Hello World");
 app.Run();
