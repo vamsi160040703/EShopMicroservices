@@ -20,11 +20,11 @@ namespace Ordering.Domain.Models
             get => OrderItems.Sum(x => x.Price * x.Quantity);
             private set { }
         }
-        public static Order Create(OrderId Id, CustomerId customerId, OrderName orderName, Address shippingAddress, Address billingAddress, Payment payment)
+        public static Order Create(OrderId id, CustomerId customerId, OrderName orderName, Address shippingAddress, Address billingAddress, Payment payment)
         {
             var order = new Order
             {
-                Id = Id,
+                Id = id,
                 CustomerId = customerId,
                 OrderName = orderName,
                 ShippingAddress = shippingAddress,
